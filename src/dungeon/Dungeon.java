@@ -26,37 +26,6 @@ public class Dungeon {
         this.board = new char[length][height];
     }
 
-    public void drawBoard() {
-        drawDots();
-        drawUnits();
-    }
-
-    public void drawUnits() {
-        for (Unit unit : this.units) {
-            int x = unit.getPosX();
-            int y = unit.getPosY();
-
-            board[x][y] = unit.drawModel();
-        }
-    }
-
-    public void drawDots() {
-        for (int j = 0; j < height; j++) {
-            for (int i = 0; i < length; i++) {
-                board[i][j] = '.';
-            }
-        }
-    }
-
-    public void printBoard() {
-        for (int j = 0; j < height; j++) {
-            for (int i = 0; i < length; i++) {
-                System.out.print(board[i][j]);
-            }
-            System.out.println();
-        }
-    }
-
     public void move(String command, Unit unit) {
         int x = unit.getPosX();
         int y = unit.getPosY();
@@ -161,6 +130,7 @@ public class Dungeon {
     public void run() {
         int movesLeft = this.moves;
 
+        Board board = new Board(this.height, this.length);
         Unit player = new Player(0,0);
         units.add(player);
         units.addAll(initializeVampires());
@@ -174,9 +144,9 @@ public class Dungeon {
 
             drawPosList();
 
-            drawBoard();
+            board.drawBoard(this.units);
 
-            printBoard();
+            board.printBoard();
 
             System.out.println("");
 

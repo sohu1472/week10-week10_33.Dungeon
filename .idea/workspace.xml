@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="591db9fa-d474-4598-80a6-89156a08f693" name="Default Changelist" comment="" />
+    <list default="true" id="591db9fa-d474-4598-80a6-89156a08f693" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Dungeon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Dungeon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Unit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Vampire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week10-week10_33.Dungeon/dungeon/Vampire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dungeon/Dungeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dungeon/Dungeon.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,13 +20,16 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="week10-week10_33.Dungeon" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dungeon/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="18" selection-end-line="8" />
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
               <folding>
                 <element signature="e#82#83#0" expanded="true" />
                 <element signature="e#132#133#0" expanded="true" />
@@ -31,11 +41,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dungeon/Dungeon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+            <state relative-caret-position="537">
+              <caret line="146" column="40" lean-forward="true" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3761#3770#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dungeon/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -43,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dungeon/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="207">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -52,8 +72,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dungeon/Vampire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="253">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dungeon/Unit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="529">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#181#182#0" expanded="true" />
                 <element signature="e#205#206#0" expanded="true" />
@@ -89,14 +113,16 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dungeon/Player.java" />
         <option value="$PROJECT_DIR$/src/dungeon/Main.java" />
         <option value="$PROJECT_DIR$/src/dungeon/Unit.java" />
+        <option value="$PROJECT_DIR$/src/dungeon/Player.java" />
         <option value="$PROJECT_DIR$/src/dungeon/Vampire.java" />
+        <option value="$PROJECT_DIR$/src/dungeon/Board.java" />
         <option value="$PROJECT_DIR$/src/dungeon/Dungeon.java" />
       </list>
     </option>
@@ -106,6 +132,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -117,6 +144,17 @@
             <path>
               <item name="week10-week10_33.Dungeon" type="b2602c69:ProjectViewProjectNode" />
               <item name="week10-week10_33.Dungeon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week10-week10_33.Dungeon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week10-week10_33.Dungeon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="week10-week10_33.Dungeon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="week10-week10_33.Dungeon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dungeon" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -130,7 +168,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558986924138" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,6 +213,21 @@
       <option name="presentableId" value="Default" />
       <updated>1558898128810</updated>
     </task>
+    <task id="LOCAL-00001" summary="eh">
+      <created>1559421509441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559421509441</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed models to char type in Player, Unit and Vampire;&#10;simplified board;&#10;rebuilt and simplified drawBoard();&#10;added method printBoard();&#10;vampires are now getting spawned and their coordinates are truly random;">
+      <created>1559427266208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559427266208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -184,14 +237,14 @@
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5005574" side_tool="true" weight="0.26332623" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49944258" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="TMC Test Results" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32998884" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32998884" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.4793757" />
@@ -241,7 +294,9 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="eh" />
+    <MESSAGE value="changed models to char type in Player, Unit and Vampire;&#10;simplified board;&#10;rebuilt and simplified drawBoard();&#10;added method printBoard();&#10;vampires are now getting spawned and their coordinates are truly random;" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed models to char type in Player, Unit and Vampire;&#10;simplified board;&#10;rebuilt and simplified drawBoard();&#10;added method printBoard();&#10;vampires are now getting spawned and their coordinates are truly random;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jrt://C:/Program Files/Java/jdk-10.0.1!/java.base/java/lang/invoke/DirectMethodHandle$Holder.class">
@@ -265,17 +320,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dungeon/StringToMove.java" />
-    <entry file="file://$PROJECT_DIR$/src/dungeon/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/dungeon/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="115">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="e#82#83#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dungeon/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="529">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#181#182#0" expanded="true" />
             <element signature="e#205#206#0" expanded="true" />
@@ -289,30 +348,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dungeon/Vampire.java">
+    <entry file="file://$PROJECT_DIR$/src/dungeon/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="207">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dungeon/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/dungeon/Vampire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="18" selection-end-line="8" />
+        <state relative-caret-position="253">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#82#83#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dungeon/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dungeon/Dungeon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+        <state relative-caret-position="537">
+          <caret line="146" column="40" lean-forward="true" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3761#3770#0" expanded="true" />
           </folding>
         </state>
       </provider>
