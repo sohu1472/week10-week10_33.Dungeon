@@ -5,7 +5,7 @@ public class Unit {
     private int y;
 
     public Unit(int x, int y) {
-        this.x = y;
+        this.x = x;
         this.y = y;
     }
 
@@ -22,8 +22,8 @@ public class Unit {
         this.y = y;
     }
 
-    public String drawModel() {
-        return "err";
+    public char drawModel() {
+        return 'e';
     }
 
     public void setModel(char model) {

@@ -2,20 +2,20 @@ package dungeon;
 
 public class Player extends Unit {
 
-    private String model;
+    private char model;
 
     public Player(int x, int y) {
         super(x, y);
-        this.model = "@";
+        this.model = '@';
     }
 
     @Override
-    public String drawModel() {
+    public char drawModel() {
         return model;
     }
 
     @Override
     public void setModel(char model) {
-        this.model = "" + model;
+        this.model = model;
     }
 }

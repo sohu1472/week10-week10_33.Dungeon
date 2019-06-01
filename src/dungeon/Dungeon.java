@@ -27,24 +27,31 @@ public class Dungeon {
     }
 
     public void drawBoard() {
-        boolean modelDrawn = false;
+        drawDots();
+        drawUnits();
+    }
+
+    public void drawUnits() {
+        for (Unit unit : this.units) {
+            int x = unit.getPosX();
+            int y = unit.getPosY();
+
+            board[x][y] = unit.drawModel();
+        }
+    }
+
+    public void drawDots() {
         for (int j = 0; j < height; j++) {
             for (int i = 0; i < length; i++) {
-                modelDrawn = false;
-                for (Unit unit : this.units) {
-                    if (unit.getPosY() == j && unit.getPosX() == i) {
-                        System.out.print(unit.drawModel());
-                        modelDrawn = true;
-                    }
-                    break;
-                }
-                if (modelDrawn) {
-                    continue;
-                }
-                else {
-                    board[i][j] = '.';
-                    System.out.print(board[i][j]);
-                }
+                board[i][j] = '.';
+            }
+        }
+    }
+
+    public void printBoard() {
+        for (int j = 0; j < height; j++) {
+            for (int i = 0; i < length; i++) {
+                System.out.print(board[i][j]);
             }
             System.out.println();
         }
@@ -83,7 +90,7 @@ public class Dungeon {
 
 
         for(Unit vampire : units) {
-            if (vampire.drawModel().equals("v")) {
+            if (vampire.drawModel() == 'v') {
                 for(int i = 0; i < moveCount; i++) {
                     if (rand.nextInt(1) == 0) {
                         if (rand.nextInt(1) == 0) {
@@ -124,16 +131,17 @@ public class Dungeon {
         System.out.println("");
     }
 
-    public void initializeVampires() {
+    public List initializeVampires() {
         Random rand = new Random();
-        int min = 0;
-        for (int i = 0; i < vampires; i++) {
+        List<Vampire> vampires = new ArrayList<Vampire>();
+
+        for (int i = 0; i < this.vampires; i++) {
             boolean repeated = false;
             int x = rand.nextInt(length);
             int y = rand.nextInt(height);
 
-            for(Unit unit : units) {
-                if (unit.getPosY() == y && unit.getPosX() == x) {
+            for(Vampire vampire : vampires) {
+                if (vampire.getPosY() == y && vampire.getPosX() == x) {
                     repeated = true;
                 }
             }
@@ -142,17 +150,20 @@ public class Dungeon {
                 continue;
             }
             else {
-                units.add(new Vampire(x, y));
+                vampires.add(new Vampire(x, y));
             }
         }
+        return vampires;
     }
+
+
 
     public void run() {
         int movesLeft = this.moves;
 
         Unit player = new Player(0,0);
         units.add(player);
-        initializeVampires();
+        units.addAll(initializeVampires());
 
         while(true) {
             if (movesLeft <= 0) {
@@ -164,6 +175,8 @@ public class Dungeon {
             drawPosList();
 
             drawBoard();
+
+            printBoard();
 
             System.out.println("");
 

@@ -2,21 +2,21 @@ package dungeon;
 
 public class Vampire extends Unit {
 
-    private String model;
+    private char model;
 
     public Vampire(int x, int y) {
         super(x, y);
-        this.model = "v";
+        this.model = 'v';
     }
 
     @Override
-    public String drawModel() {
+    public char drawModel() {
         return this.model;
     }
 
     @Override
     public void setModel(char model) {
-        this.model = "" + model;
+        this.model = model;
     }
 
     @Override
