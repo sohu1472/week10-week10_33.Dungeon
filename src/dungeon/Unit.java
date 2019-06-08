@@ -3,10 +3,12 @@ package dungeon;
 public class Unit {
     private int x;
     private int y;
+    private boolean pwned;
 
     public Unit(int x, int y) {
         this.x = x;
         this.y = y;
+        this.pwned = false;
     }
 
     public int getPosX() {
@@ -15,6 +17,14 @@ public class Unit {
 
     public int getPosY() {
         return y;
+    }
+
+    public void pwn() {
+        this.pwned = true;
+    }
+
+    public boolean gotPwned() {
+        return this.pwned;
     }
 
     public void move(int x, int y) {
@@ -37,6 +47,7 @@ public class Unit {
     public void setY(int y) {
         this.y = y;
     }
+
 }
 
 

@@ -14,6 +14,7 @@ public class Dungeon {
     private List<Unit> units;
     private Scanner reader;
     private Board board;
+    private List<Object> toBeRemoved;
 
     public Dungeon(int length, int height, int vampires, int moves, boolean vampiresMove) {
         this.length = length;
@@ -24,6 +25,7 @@ public class Dungeon {
         units = new ArrayList<Unit>();
         this.reader = new Scanner(System.in);
         board = new Board(height, length);
+        toBeRemoved = new ArrayList<Object>();
     }
 
     public void move(String command, Unit unit) {
@@ -52,38 +54,57 @@ public class Dungeon {
             int moveCount = moveSet.size();
             vampireMove(moveCount);
         }
+        else {
+            for (Unit vampire : units) {
+                if (vampire.drawModel() == 'v') {
+                    checkIfHit(vampire);
+                }
+            }
+            removePwnedVampires();
+        }
     }
 
     public void vampireMove(int moveCount) {
         Random rand = new Random();
 
+
         for(Unit vampire : units) {
             if (vampire.drawModel() == 'v') {
-                int x = vampire.getPosX();
-                int y = vampire.getPosY();
+                checkIfHit(vampire);
+
                 for(int i = 0; i < moveCount; i++) {
-                    if (rand.nextInt(1) == 0) {
-                        if (rand.nextInt(1) == 0 && y < this.height-1) {
+                    if (rand.nextInt(2) == 0) {
+                        if (rand.nextInt(2) == 0 && vampire.getPosY() < this.height-1) {
                             vampire.move(0,1);
                         }
-                        else if (y > 0) {
+                        else if (vampire.getPosY() > 0) {
                             vampire.move(0, -1);
                         }
                     }
                     else {
-                        if (rand.nextInt(1) == 0 && x < this.length-1) {
+                        if (rand.nextInt(2) == 0 && vampire.getPosX() < this.length-1) {
                             vampire.move(1, 0);
                         }
-                        else if (x > 0){
+                        else if (vampire.getPosX() > 0){
                             vampire.move(-1,0);
                         }
                     }
-                }
-                if (this.board.getBoard()[vampire.getPosX()][vampire.getPosY()] == '@') {
-                    units.remove(vampire);
+                    checkIfHit(vampire);
                 }
             }
         }
+        removePwnedVampires();
+    }
+
+    public void checkIfHit(Unit vampire) {
+
+        if(vampire.getPosX() == units.get(0).getPosX() && vampire.getPosY() == units.get(0).getPosY()) {
+            toBeRemoved.add(vampire);
+        }
+    }
+
+    public void removePwnedVampires() {
+        units.removeAll(toBeRemoved);
     }
 
     public void drawPosList() {
@@ -99,7 +120,7 @@ public class Dungeon {
 
         for (int i = 0; i < this.vampires; i++) {
             boolean repeated = false;
-            int x = rand.nextInt(length);
+            int x = rand.nextInt(length-1) + 1;
             int y = rand.nextInt(height);
 
             for(Vampire vampire : vampires) {

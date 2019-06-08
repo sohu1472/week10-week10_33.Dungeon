@@ -4,10 +4,13 @@ public class Vampire extends Unit {
 
     private char model;
 
+
     public Vampire(int x, int y) {
         super(x, y);
         this.model = 'v';
     }
+
+
 
     @Override
     public char drawModel() {
